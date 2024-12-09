@@ -1,0 +1,146 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+/* Заголовок */
+header {
+    background-color: rgb(189, 189, 66);
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Навигация */
+nav {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ee9300; /* Изменение цвета при наведении */
+}
+
+/* Основное содержимое */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto; /* Центрирование основного содержимого */
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Разделы */
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовки секций */
+h2 {
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 10px;
+    color: #35424a;
+}
+
+/* Стиль статей */
+article {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #dcdcdc; /* Линия для отделения */
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+article h2 {
+    color: #35424a;
+}
+
+/* Стиль для первого абзаца статьи */
+article p:first-of-type {
+    font-weight: bold; /* Выделение первого абзаца */
+}
+
+/* Стиль для всех абзацев в статьях */
+article p {
+    font-size: 15px; /* Увеличенный размер шрифта для улучшения читаемости */
+    color: #000000;
+}
+
+/* Ссылки в статьях */
+article a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px; /* Увеличенные отступы для кнопки */
+    background: #35424a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s; /* Плавный переход */
+}
+
+article a:hover {
+    background: #48657a;
+}
+
+/* Футер */
+footer {
+    background-color: #c6ba35;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0; /* Увеличенные отступы для более комфортного рамки */
+}
+
+/* Боковая панель */
+aside {
+    background: #e2e2e2;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 {
+    margin-top: 0;
+}
+
+/* Псевдоэлемент для стиля после заголовка в боковой панели */
+aside h3::after {
+    content: "✦"; /* Добавление значка */
+    margin-left: 5px;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Переключение на блочный вид */
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 15px; /* Меньшие отступы на мобильных устройствах */
+    }
+}
+
